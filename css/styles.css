@@ -1,0 +1,29 @@
+body {
+background:#0b1020;
+color:white;
+font-family:Arial;
+}
+
+.wrap {padding:20px;}
+
+.card {
+background:#121933;
+padding:20px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.grid-kpi {
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:10px;
+}
+
+.spark-track {
+height:20px;
+background:#2a2f45;
+border-radius:10px;
+}
+
+.green {background:#22c55e;height:100%;}
+.red {background:#ef4444;height:100%;}

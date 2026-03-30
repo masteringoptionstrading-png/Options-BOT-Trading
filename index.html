@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Dashboard</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<h1>Trading Dashboard</h1>
+
+<div class="upload-bar">
+<label class="upload-label">
+Upload CSV
+<input type="file" id="csvFile">
+</label>
+</div>
+
+<div class="grid-kpi">
+<div class="card">Total P/L <h2 id="kpiTotal">$0</h2></div>
+<div class="card">Win Rate <h2 id="kpiWin">0%</h2></div>
+<div class="card">Trades <h2 id="kpiTrades">0</h2></div>
+<div class="card">Green Days <h2 id="kpiGreen">0</h2></div>
+<div class="card">Red Days <h2 id="kpiRed">0</h2></div>
+</div>
+
+<div class="card spark-widget">
+<h2>Green Days vs Red Days</h2>
+<h1 id="winDayRate">0%</h1>
+
+<div>
+Profitable Days <span id="greenCount">0</span>
+<div class="spark-track"><div id="greenBar" class="green"></div></div>
+</div>
+
+<div>
+Losing Days <span id="redCount">0</span>
+<div class="spark-track"><div id="redBar" class="red"></div></div>
+</div>
+
+</div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
